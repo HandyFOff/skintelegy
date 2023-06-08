@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="lib/dropdown/dropdown.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Skintelegy</title>
+</head>
+
+<body>
+    <div class="wrapper contatc-us-wrapper">
+        <div class="empty"></div>
+        <main class="main">
+            <form class="contact-us">
+                <div class="container">
+                    <h1 class="contact-us__content_title">Contact us</h1>
+                    <div class="contact-us__content">
+                        <div class="contact-us__content_column">
+                            <div class="contact-us__content_input">
+                                <h1>User name</h1>
+                                <input type="text" placeholder="User name">
+                            </div>
+                            <div class="contact-us__content_input">
+                                <h1>email</h1>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="contact-us__content_input">
+                                <h1>phone number</h1>
+                                <input type="number" placeholder="Phone number">
+                            </div>
+                        </div>
+                        <div class="contact-us__content_column">
+                            <div class="contact-us__content_input">
+                                <h1>topic</h1>
+                                <input type="text" placeholder="Topic">
+                            </div>
+                            <div class="contact-us__content_textarea">
+                                <h1>User name</h1>
+                                <textarea placeholder="Your inquiry"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="contact-us__btn btn-primary" type="submit">Contact</button>
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <div class="popup popup-settings" id="popup1">
+        <div class="popup__content popup-settings__container">
+            <div class="popup-settings__content">
+                <h1 class="popup-settings__content_title">User name<img src="assets/icons/pen.svg" alt=""></h1>
+                <div class="popup-settings__inputs">
+                    <div class="popup-settings__row">
+                        <div class="popup-settings__column">
+                            <h1 class="popup-settings__column_title">Your email</h1>
+                            <input type="email" class="popup-settings__column_input" placeholder="duck777@yadnex.ru">
+                        </div>
+                        <div class="popup-settings__column">
+                            <h1 class="popup-settings__column_title">Your password</h1>
+                            <input type="password" class="popup-settings__column_input" placeholder="*******">
+                        </div>
+                    </div>
+                    <div class="popup-settings__row">
+                        <input type="text" class="popup-settings__column_input" placeholder="Enter your steam API">
+                        <div id="apply">Apply</div>
+                    </div>
+                </div>
+                <button class="popup-settings__btn" type="submit">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-balance" id="popup4">
+        <div class="popup__content popup-balance__content">
+            <div class="popup-balance__head">
+                <h1 class="popup-balance__head_title">Balance</h1>
+                <img src="assets/icons/close1.svg" alt="close" class="popup-balance__head_img close-popup" data-popup="popup4">
+            </div>
+            <div class="popup-balance__balance">
+                <img src="assets/images/balance-logo.png" alt="balance img">
+                <h1 class="popup-balance__balance_title">3,756.00</h1>
+            </div>
+            <div class="popup-balance__container">
+                <div class="popup-balance__container_main">
+                    <div class="popup-balance__spend">
+                        <div class="popup-balance__spend_head">
+                            <div>
+                                <h1>Euro</h1>
+                                <h1>3,757.00 EUR.</h1>
+                            </div>
+                            <img src="assets/icons/euro.svg" alt="euro">
+                        </div>
+                        <div class="popup-balance__spend_content">
+                            <h1>You spend</h1>
+                            <div>
+                                <div>
+                                    <span>3,756.00</span>
+                                    <span>EUR.</span>
+                                </div>
+                                <div></div>
+                                <p>The minimum deposit amount per one transaction is * EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-balance__get">
+                        <div class="popup-balance__spend_head">
+                            <div>
+                                <h1>Skintellions</h1>
+                                <h1>3,757.00 EUR.</h1>
+                            </div>
+                            <div>
+                                <img src="assets/icons/get.svg" alt="euro">
+                            </div>
+                        </div>
+                        <div class="popup-balance__spend_content">
+                            <h1>You get</h1>
+                            <div>
+                                <div style="justify-content: start;">
+                                    <span style="margin-right: 36px;">3,756.00</span>
+                                    <img src="assets/icons/skin-mini.svg" alt="">
+                                </div>
+                                <div></div>
+                                <p>The maximum deposit amount per one transaction is ***** EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup-balance__btn btn-primary">Buy Skintellions</button>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/popup/popup.js"></script>
+    <script src="lib/dropdown/dropdown.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../lib/accordion/accordion.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Skintelegy</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <button class="open-popup" data-popup="popup1">Открыть попап 1</button>
+            <button class="open-popup" data-popup="popup2">Открыть попап 2</button>
+            <button class="open-popup" data-popup="popup3">Открыть попап 3</button>
+            <button class="open-popup" data-popup="popup4">Открыть попап 4</button>
+        </main>
+    </div>
+
+    <div class="popup popup-settings" id="popup1">
+        <div class="popup__content popup-settings__container">
+            <div class="popup-settings__content">
+                <h1 class="popup-settings__content_title">User name<img src="assets/icons/pen.svg" alt=""></h1>
+                <div class="popup-settings__inputs">
+                    <div class="popup-settings__row">
+                        <div class="popup-settings__column">
+                            <h1 class="popup-settings__column_title">Your email</h1>
+                            <input type="email" class="popup-settings__column_input" placeholder="duck777@yadnex.ru">
+                        </div>
+                        <div class="popup-settings__column">
+                            <h1 class="popup-settings__column_title">Your password</h1>
+                            <input type="password" class="popup-settings__column_input" placeholder="*******">
+                        </div>
+                    </div>
+                    <div class="popup-settings__row">
+                        <input type="text" class="popup-settings__column_input" placeholder="Enter your steam API">
+                        <div id="apply">Apply</div>
+                    </div>
+                </div>
+                <button class="popup-settings__btn" type="submit">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-cancel" id="popup2">
+        <div class="popup__content popup-cancel__content">
+            <div>
+                <h1 class="popup-cancel__content_title"><span>Impossible</span> to proceed</h1>
+                <p class="popup-cancel__content_description">You do not have enough Skintellions on your balance to make
+                    a transaction</p>
+            </div>
+            <button class="popup-cancel__content_btn btn-secondary close-popup" type="button" data-popup="popup2">Top up
+                balance</button>
+        </div>
+    </div>
+    <div class="popup popup-order" id="popup3">
+        <form class="popup__content popup-order__content">
+            <img src="assets/icons/close2.svg" alt="" data-popup="popup3" class="close-popup">
+            <div class="popup-order__container">
+                <h1 class="popup-order__container_title">Your order:</h1>
+                <div class="popup-order__card">
+                    <div class="popup-order__card_name">
+                        <div></div>
+                        <h1>Name</h1>
+                    </div>
+                    <div class="popup-order__card_price">
+                        <h1>9 999 S</h1>
+                        <img src="assets/icons/delete.svg" alt="delete">
+                    </div>
+                </div>
+                <h1 class="popup-order__price">Sum: 9 999 <span>S</span></h1>
+                <input type="text" class="popup-order__promo" placeholder="Enter promo code">
+                <label class="order-policy">I have read, understood and agreed to the Terms of Use and Privacy Policy
+                    <input type="checkbox" checked="checked" name="radio">
+                    <span class="order-policy__checkmark"></span>
+                </label>
+                <div class="popup-order__total">
+                    <h1 class="popup-order__total_sum">Sum: 9 999 <span>S</span></h1>
+                    <h1 class="popup-order__total_total">Total: 9 000 <span>S</span></h1>
+                </div>
+                <button class="popup-order__btn btn-secondary" type="submit">Pay</button>
+            </div>
+        </form>
+    </div>
+    <div class="popup popup-balance" id="popup4">
+        <div class="popup__content popup-balance__content">
+            <div class="popup-balance__head">
+                <h1 class="popup-balance__head_title">Balance</h1>
+                <img src="assets/icons/close1.svg" alt="close" class="popup-balance__head_img close-popup"
+                    data-popup="popup4">
+            </div>
+            <div class="popup-balance__balance">
+                <img src="assets/images/balance-logo.png" alt="balance img">
+                <h1 class="popup-balance__balance_title">3,756.00</h1>
+            </div>
+            <div class="popup-balance__container">
+                <div class="popup-balance__container_main">
+                    <div class="popup-balance__spend">
+                        <div class="popup-balance__spend_head">
+                            <div>
+                                <h1>Euro</h1>
+                                <h1>3,757.00 EUR.</h1>
+                            </div>
+                            <img src="assets/icons/euro.svg" alt="euro">
+                        </div>
+                        <div class="popup-balance__spend_content">
+                            <h1>You spend</h1>
+                            <div>
+                                <div>
+                                    <span>3,756.00</span>
+                                    <span>EUR.</span>
+                                </div>
+                                <div></div>
+                                <p>The minimum deposit amount per one transaction is * EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-balance__get">
+                        <div class="popup-balance__spend_head">
+                            <div>
+                                <h1>Skintellions</h1>
+                                <h1>3,757.00 EUR.</h1>
+                            </div>
+                            <div>
+                                <img src="assets/icons/get.svg" alt="euro">
+                            </div>
+                        </div>
+                        <div class="popup-balance__spend_content">
+                            <h1>You get</h1>
+                            <div>
+                                <div style="justify-content: start;">
+                                    <span style="margin-right: 36px;">3,756.00</span>
+                                    <img src="assets/icons/skin-mini.svg" alt="">
+                                </div>
+                                <div></div>
+                                <p>The maximum deposit amount per one transaction is ***** EUR</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="popup-balance__btn btn-primary">Buy Skintellions</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/popup/popup.js"></script>
+    <script src="../lib/accordion/accordion.js"></script>
+</body>
+
+</html>
