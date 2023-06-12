@@ -399,10 +399,11 @@ input::-webkit-inner-spin-button {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  font-size: 60px;
+  font-size: 56px;
   line-height: 120%;
   text-transform: uppercase;
   color: #354A71;
+  text-shadow: 1px 1px 5px #fff;
 }
 @media (max-width: 768px) {
   .start__title {
@@ -577,6 +578,16 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 20px;
   color: #F5F7FA;
+  display: flex;
+}
+.catalog__item_price > span > h1 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #F5F7FA;
+  color: #F9D41D;
 }
 
 .quality {
@@ -1362,20 +1373,6 @@ input::-webkit-inner-spin-button {
   line-height: 145%;
   color: #000000;
 }
-.card__content_rating {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 145%;
-  color: #000000;
-}
-.card__content_rating > span {
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 145%;
-  color: #1AC13F;
-}
 .card__content_subtitle {
   font-style: normal;
   font-weight: 700;
@@ -1505,6 +1502,11 @@ input::-webkit-inner-spin-button {
   width: 100%;
   height: 272px;
 }
+.inventory__content > .catalog__item > .catalog__item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .inventory__content > .catalog__item > .catalog__item_content > div:nth-child(1) > .catalog__item_namestatus {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
@@ -1513,6 +1515,13 @@ input::-webkit-inner-spin-button {
   line-height: 15px;
   color: #F5F7FA;
   opacity: 0.6;
+}
+.inventory__content > .catalog__item > .catalog__item_content > div:nth-child(1) > .catalog__item_title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
 }
 .inventory__content > .catalog__item > .catalog__item_content > div:nth-child(2) {
   display: flex;
@@ -1809,6 +1818,43 @@ input::-webkit-inner-spin-button {
 @media (max-width: 425px) {
   .log__row > h1 {
     font-size: 12px;
+  }
+}
+.log__row_amount.log-row-content {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.055em;
+  color: #354A71;
+}
+@media (max-width: 596px) {
+  .log__row_amount.log-row-content {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .log__row_amount.log-row-content {
+    font-size: 12px;
+  }
+}
+.log__row_amount.log-row-content2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.055em;
+  color: #F9D41D;
+}
+@media (max-width: 596px) {
+  .log__row_amount.log-row-content2 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .log__row_amount.log-row-content2 {
+    font-size: 12px;
+    text-shadow: 1px 1px 20px #000000;
   }
 }
 .log__row_transaction.log-row-content {
@@ -2174,6 +2220,9 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   line-height: 19px;
   color: #FFFFFF;
+}
+.popup-order__card_price > h1 > span {
+  color: #F9D41D;
 }
 .popup-order__price {
   align-self: flex-end;
